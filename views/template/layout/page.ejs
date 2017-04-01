@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Education style</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+    <link rel="shortcut icon" href="/images/ico.png" type="image/png">
+    <script src = "/vendor/bower_components/jquery/dist/jquery.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <% include ../partials/header.ejs%>
+    </header>
+        <% include ../partials/navigation.ejs %>
+        <%- blocks.menu_active%>
+    <div class = "border"></div>
+
+    <div class="content">
+        <%-body %>
+    </div>
+    <div class="footer">
+        <% include ../partials/footer.ejs%>
+    </div>
+</div>
+</body>
+</html>

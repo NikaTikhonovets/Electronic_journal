@@ -1,0 +1,4 @@
+<% layout('../template/layout/page') -%>
+<% block('menu_active',"<script>$(document).ready(function () { var selectedElements = $(\"li.menu:contains('ОТЗЫВЫ')\");selectedElements.addClass('active');});</script>")%>
+<!--body-->
+<% include ../template/partials/body_review.ejs%>
