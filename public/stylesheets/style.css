@@ -6,13 +6,26 @@ body {
   float: left;
 }
 
-input[type="text"] {
+input {
   background-color: #f3f3f3;
   border: 1px solid #e7e7e7;
   height: 30px;
-  color: #b2b2b2;
+  color: black;
   padding: 0 10px;
   vertical-align: top;
+}
+
+.login__keyValue{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.login__keyValue label{
+    margin-right: 10px;
+}
+header span{
+    color: white;
 }
 button {
   color: #fff;
@@ -20,7 +33,7 @@ button {
   border: none;
   height: 32px;
   font-family: 'Oswald', sans-serif;
-  padding: 0 3px;
+  padding: 0 10px;
 }
 button img{
   max-height: 80%;
@@ -40,7 +53,33 @@ p {
 header {
   padding: 5px 0;
   background: #828282;
+  display: flex;
+  justify-content: space-between;
+
 }
+
+header span, header .header__button{
+    margin: auto;
+}
+header button{
+    margin: auto;
+}
+
+.dop__functions button{
+    margin-right:20px;
+}
+
+.dop__functions{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.dop__functions div{
+    display: flex;
+    justify-content: center;
+}
+
 form[name="search"] {
   float: right;
   padding: 5px 50px;
@@ -56,8 +95,10 @@ form[name="search"] {
   margin: auto;
 }
 nav {
-    width:95%;
+    width:100%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 nav a {
   text-decoration: none;
@@ -66,6 +107,9 @@ nav a {
 nav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav li {
@@ -76,7 +120,7 @@ nav li {
 
 .top-menu li {
   display: inline-block;
-  padding: 10px 70px;
+  padding: 10px 40px;
   margin: 0;
 }
 
@@ -350,15 +394,15 @@ nav li {
     background: #f3f3f3;
     padding: 30px;
     margin: 20px;
-    border-radius: 5px;
     float: left;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
 }
 
 .education_org .border{
     height: 2px;
     width: 60%;
-    float: right;
-    margin: auto;
+    margin-left: auto;
+    margin-right: 0.9em;
 }
 
 .education_org h1{
@@ -423,6 +467,146 @@ nav li {
     padding: 5px 200px;
     padding-right: 0;
 }
+/*Join*/
+.mySlides{
+    width:100%;
+}
+
+.banner_join span{
+    padding-top: 40px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.join_content_center{
+    max-width: 75%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.join_type{
+    padding: 30px 0;
+    float:right;
+    width: 100%;
+}
+
+.join_type:nth-child(even) .join_item{
+    max-width: 350px;
+}
+
+.join_type:nth-child(even) .join_type_content{
+    padding-left: 50%;
+}
+
+.join_type:nth-child(even) button{
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 20px;
+
+}
+
+.join_type:nth-child(odd) .join_type_content{
+    padding-left: 10%;
+}
+
+.join_type:nth-child(odd) .join_item{
+    color: white;
+    max-width: 350px;
+}
+
+.join_type .item div{
+    float: none;
+}
+
+.join_type_img{
+    margin-left: 15%;
+    margin-top: 0;
+    float:left;
+    max-width: 200px;
+}
+
+.join_type_img img{
+    border-radius: 100%;
+}
+
+.join_type:nth-child(odd) .join_type_img{
+    margin-right: 25%;
+    margin-top: 0;
+    float:right;
+}
+
+.join_type:nth-child(odd) button{
+    background: #b2b2b2;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.join_type_button button{
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+.join_type:nth-child(odd){
+    background: #03ad73;
+}
+.join_type_img_center{
+    max-width: 95%;
+    margin: auto;
+}
+
+.join_type_img_center img{
+    max-width: 100%;
+}
+
+/*newSchool*/
+.navigation_join{
+    width: 150px;
+    height: 180px;
+    background-color:#e7e7e7;
+    position:fixed!important;
+    overflow:auto;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.navigation_join_center{
+    margin-top: 30px;
+}
+
+.navigation_join_center button{
+    background-color: #f3f3f3;
+    color: #5b5758;
+    width:100%;
+    margin:5px 0;
+}
+
+.navigation_join_center .active{
+    background-color: #02da91;
+    color: white;
+}
+
+.form_input{
+    margin-left: 180px;
+    padding:0.01em 16px;
+}
+
+.container__login{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.input_info{
+    /*padding:8px;*/
+    display:block;
+    border:none;
+    /*border-bottom:1px solid #5b5758;*/
+    width:80%;
+}
+
+form button{
+    margin-top: 15px;
+    text-align: center;
+}
+
 
 /*Footer*/
 .footer {

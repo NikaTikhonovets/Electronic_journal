@@ -1,6 +1,10 @@
 <a href="/"><img src="/images/logo.png" alt="Whitesquare logo" height="42" width="200"></a>
-<form name="search" action="#" method="get">
-    <input type="text" name="q" placeholder="Введите запрос"><button type="submit">
-        <img src="/images/search_img.png" alt="">
-    </button>
-</form>
+<div class="dop__functions">
+    <% if(user){ %>
+        <%if (user.role == 'school' || user.role == 'director') {%>
+            <a class="header__button" href="/all_teachers"><button> Учителя </button></a>
+            <a class="header__button" href="/all_students"><button> Ученики </button></a>
+        <%}%>
+        <span>Добро пожаловать, <%= user.last_name +" "+ user.first_name%></span>
+    <%}%>
+</div>

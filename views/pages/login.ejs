@@ -1,0 +1,4 @@
+<% layout('../template/layout/page') -%>
+<% block('menu_active',"<script>$(document).ready(function () { var selectedElements = $(\"li.menu:contains('ВХОД')\");selectedElements.addClass('active');});</script>")%>
+
+<% include ../template/partials/body_login.ejs%>

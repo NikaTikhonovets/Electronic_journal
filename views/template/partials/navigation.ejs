@@ -2,12 +2,17 @@
     <div class="menu">
         <nav>
             <ul class="top-menu">
-                <li class = "menu"><a href="">ПОДКЛЮЧЕНИЕ</a></li>
+                <li class = "menu"><a href="/join">ПОДКЛЮЧЕНИЕ</a></li>
                 <li class = "menu"><a href="/">О НАС</a></li>
                 <li class = "menu"><a href="/university">УНИВЕРСИТЕТЫ</a></li>
                 <li class = "menu"><a href="/school">ШКОЛЫ</a></li>
                 <li class = "menu"><a href="/review">ОТЗЫВЫ</a></li>
                 <li class = "menu"><a href="/contact">КОНТАКТЫ</a></li>
+                <% if(!user){ %>
+                    <li class = "menu"><a href="/login">ВХОД</a></li>
+                <%}else{%>
+                    <li class = "menu"><a href="" onclick="$('<form method=POST action=/logout>').appendTo('body').submit();return false">ВЫХОД</a></li>
+                <% }%>
             </ul>
         </nav>
     </div>
